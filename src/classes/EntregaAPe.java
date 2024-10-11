@@ -2,7 +2,7 @@ package classes;
 
 public class EntregaAPe extends Entrega{
     public EntregaAPe(String nomeEntregador) {
-        super(nomeEntregador);
+        super(nomeEntregador, "🚶");
     }
 
     @Override

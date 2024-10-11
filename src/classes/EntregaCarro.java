@@ -4,7 +4,7 @@ public class EntregaCarro extends Entrega{
     private double consumoMedio; // Consumo médio em litros por quilômetro
 
     public EntregaCarro(String nomeEntregador, double consumoMedio) {
-        super(nomeEntregador);
+        super(nomeEntregador, "🚗");
         this.consumoMedio = consumoMedio;
     }
 
@@ -16,7 +16,8 @@ public class EntregaCarro extends Entrega{
     @Override
     public void imprimirCaminho() {
         super.imprimirCaminho();
-        System.out.println("Consumo total de gasolina: " + calcularConsumoTotal() + " litros.");
+        System.out.println("Entrega realizada de carro.");
+        System.out.println("Consumo total de gasolina: " + String.format("%.2f", calcularConsumoTotal()) + " litros.");
     }
 
 
